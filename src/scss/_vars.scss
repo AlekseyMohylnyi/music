@@ -1,0 +1,29 @@
+$black: #030303;
+$white: #fff;
+$red: #f23005;
+$red-dark: #c42400;
+
+%helvetica-bold{
+    font-family:'HelveticaNeueCyr-Bold';
+    font-size: 80px;    
+}
+
+%helvetica-light{
+    font-family:'HelveticaNeueCyr-Light';
+    font-size: 1rem;    
+}
+
+%helvetica-roman{
+    font-family:'HelveticaNeueCyr-Roman';
+    font-size: 16px;    
+}
+
+%helvetica-thin{
+    font-family:'HelveticaNeueCyr-Thin';
+    font-size: 36px;    
+}
+
+%roboto-regular{
+    font-family:'RobotoRegular';
+    font-size: 64px;    
+}

@@ -1,0 +1,38 @@
+.footer{
+    background-color: $black;
+    &__inner{                
+        display: flex;
+        padding: 80px 0;
+        margin: 0 auto;
+    }
+    &__link{
+        @extend %helvetica-roman;
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-right: 60px;
+        position: relative;
+        transition: all .3s ease-in-out;
+        padding-bottom: 5px;
+        &:before{
+            content: " ";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: block;
+            height: 2px;
+            width: 0;
+            background-color: $red;
+            transition: all .3s ease-in-out;            
+        }
+    }
+    &__link:hover{        
+       color: $red;           
+    }
+    &__link:hover:before{
+        width: 100%;
+        left: 0;
+    }
+    &__link:last-child{
+        margin-right: 0;
+    }
+}

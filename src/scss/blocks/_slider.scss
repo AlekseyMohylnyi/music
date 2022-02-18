@@ -1,0 +1,82 @@
+.slider{
+    height: 100vh;
+    background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: cover;
+    // margin-bottom: 380px;  
+    
+    &__wrapper{
+        height: 100vh;
+        background-image: url('../img/darkest.png');
+        background-repeat: no-repeat;
+        background-position: 100% -30%;
+        background-size: cover;
+    }
+    &__box{
+        width: 710px;
+        height: 340px;
+    }    
+    &__item{
+        text-align: right;
+        width: 710px;
+        height: 340px;
+    }
+    &__items{
+        position: relative;
+        width: 710px;
+        height: 340px;
+    }
+    &__subtitle{
+        @extend %helvetica-thin;
+        text-transform: uppercase;
+        padding-top: 30px;
+        margin-bottom: 15px;
+        letter-spacing: 6px;
+    }
+    &__title{
+        @extend %helvetica-bold;
+        text-transform: uppercase;        
+    }
+    &__text{
+        @extend %helvetica-thin;
+        font-size: 1rem;
+        margin: 20px 0 35px 0;
+        width: 100%;  
+    }
+}
+
+.slider-btn{
+    position: absolute;
+    right: 0;
+    top: -40px;  
+    cursor: pointer;
+    &__left{
+        right: 35px;
+        margin-right: 5px;
+    }
+}
+
+span{
+    color: $red;
+    margin-right: 30px;
+}
+
+.btn{
+    width: 160px;
+    height: 44px;
+    border: 1px solid $white;
+    color: $white;
+    text-transform: uppercase;
+    padding: 17px 44px;
+    transition: all .3s ease;
+    margin-right: 25px;    
+    &:hover{
+        background-color: $red;
+        border: 1px solid $red;
+    }
+}
+
+.btn:last-child{
+    margin-right: 0;
+}

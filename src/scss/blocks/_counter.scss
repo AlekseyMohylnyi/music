@@ -1,0 +1,30 @@
+.counter{
+    background-color: $red;    
+    &__inner{
+        padding: 6rem 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+        align-self: center;
+        align-items: center;
+        align-content: center;
+    }
+    &__item{     
+        display: grid; 
+        text-align: center;
+        align-self: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        transition: all .3s ease;
+        &:hover{
+            background-color: $red-dark;
+        }
+    }
+    &__number{
+        @extend %roboto-regular;
+    }
+    &__text{
+        @extend %helvetica-roman;
+    }
+}
